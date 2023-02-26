@@ -11,7 +11,7 @@ function Page({ ratings }) {
   );
 }
 
-export async function getServerSideProps() {
+/* export async function getServerSideProps() {
   let { data } = await supabase.from("ratings").select();
 
   return {
@@ -19,6 +19,6 @@ export async function getServerSideProps() {
       ratings: data,
     },
   };
-}
+} */
 
 export default Page;
