@@ -1,7 +1,7 @@
 import { supabase } from "../lib/supabaseClient";
 import Form from "../components/form";
 
-function Page({ ratings }) {
+function Page() {
   return (
     <div className="absolute w-full h-screen">
       <div className="absolute w-[600px] h-[400px] top-[-200px] left-[-200px] bg-rose-400 rounded-full blur-[100px] opacity-20 dark:opacity-10" />

@@ -49,7 +49,7 @@ export default function Form() {
   }
 
   return (
-    <div className="flex-row sm:flex justify-between items-center mx-auto max-w-6xl pt-20 pb-5">
+    <div className="py-5 mx-5">
       <Toaster />
       <h1 className="text-4xl font-bold text-center my-6">
         Submit a New Rating
@@ -132,7 +132,7 @@ export default function Form() {
       </div>
       <div>
         <button
-          className="primary button block"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
           onClick={() =>
             submitRating({
               restaurant,
