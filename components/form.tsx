@@ -49,11 +49,12 @@ export default function Form() {
   }
 
   return (
-    <div className="py-5 mx-5">
+    <div className="py-5 mx-10 max-width-5-xl">
       <Toaster />
-      <h1 className="text-4xl font-bold text-center my-6">
-        Submit a New Rating
-      </h1>
+      <h1 className="text-4xl font-bold text-center my-6">New Rating</h1>
+      <h2 className="text-1xl text-center my-6">
+        Please fill out some basic information about your dining experience.
+      </h2>
       <div className="my-4">
         <label htmlFor="restaurant" className="font-semibold">
           Restaurant:
@@ -76,6 +77,10 @@ export default function Form() {
           onChange={(e) => setDate(e.target.value)}
         />
       </div>
+      <h2 className="text-1xl text-center my-6">
+        Please rate your experience in the following categories on a scale of 1
+        to 5.
+      </h2>
       <div className="my-4">
         <label htmlFor="food" className="font-semibold">
           Food:
