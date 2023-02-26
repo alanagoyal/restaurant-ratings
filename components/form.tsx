@@ -47,87 +47,83 @@ export default function Form() {
   }
 
   return (
-    <div className="absolute w-full h-screen">
-      <div className="absolute w-[600px] h-[400px] top-[-200px] left-[-200px] bg-rose-400 rounded-full blur-[100px] opacity-20 dark:opacity-10" />
-      <div className="absolute w-[800px] h-[500px] bottom-[-200px] right-0 bg-blue-300 rounded-full blur-[100px] opacity-20 dark:opacity-10" />
+    <div>
+      <h1 className="text-5xl my-2 font-bold ">Submit a New Rating</h1>
       <div>
-        <h1 className="text-5xl my-2 font-bold ">Submit a New Rating</h1>
-        <div>
-          <label htmlFor="restaurant">Restaurant: </label>
-          <input
-            id="restaurant"
-            type="text"
-            onChange={(e) => setRestaurant(e.target.value)}
-          />
-        </div>
-        <div>
-          <label htmlFor="date">Date: </label>
-          <input
-            className="py-2"
-            id="date"
-            type="date"
-            onChange={(e) => setDate(e.target.value)}
-          />
-        </div>
-        <div>
-          <label htmlFor="food">Food: </label>
-          <input
-            className="py-2"
-            id="food"
-            type="text"
-            onChange={(e) => setFood(e.target.value)}
-          />
-        </div>
-        <div>
-          <label htmlFor="beverage">Beverage: </label>
-          <input
-            id="beverage"
-            type="text"
-            onChange={(e) => setBeverage(e.target.value)}
-          />
-        </div>
-        <div>
-          <label htmlFor="service">Service: </label>
-          <input
-            id="service"
-            type="text"
-            onChange={(e) => setService(e.target.value)}
-          />
-        </div>
-        <div>
-          <label htmlFor="comfort">Comfort: </label>
-          <input
-            id="comfort"
-            type="text"
-            onChange={(e) => setComfort(e.target.value)}
-          />
-        </div>
-        <div>
-          <label htmlFor="vibe">Vibe: </label>
-          <input
-            id="vibe"
-            type="text"
-            onChange={(e) => setVibe(e.target.value)}
-          />
-        </div>
-        <div>
-          <button
-            className="primary button block"
-            onClick={() =>
-              submitRating({
-                restaurant,
-                date,
-                food,
-                beverage,
-                service,
-                comfort,
-                vibe,
-              })
-            }
-          >
-            Submit Rating
-          </button>
-        </div>
+        <label htmlFor="restaurant">Restaurant: </label>
+        <input
+          id="restaurant"
+          type="text"
+          onChange={(e) => setRestaurant(e.target.value)}
+        />
+      </div>
+      <div>
+        <label htmlFor="date">Date: </label>
+        <input
+          className="py-2"
+          id="date"
+          type="date"
+          onChange={(e) => setDate(e.target.value)}
+        />
+      </div>
+      <div>
+        <label htmlFor="food">Food: </label>
+        <input
+          className="py-2"
+          id="food"
+          type="text"
+          onChange={(e) => setFood(e.target.value)}
+        />
+      </div>
+      <div>
+        <label htmlFor="beverage">Beverage: </label>
+        <input
+          id="beverage"
+          type="text"
+          onChange={(e) => setBeverage(e.target.value)}
+        />
+      </div>
+      <div>
+        <label htmlFor="service">Service: </label>
+        <input
+          id="service"
+          type="text"
+          onChange={(e) => setService(e.target.value)}
+        />
+      </div>
+      <div>
+        <label htmlFor="comfort">Comfort: </label>
+        <input
+          id="comfort"
+          type="text"
+          onChange={(e) => setComfort(e.target.value)}
+        />
+      </div>
+      <div>
+        <label htmlFor="vibe">Vibe: </label>
+        <input
+          id="vibe"
+          type="text"
+          onChange={(e) => setVibe(e.target.value)}
+        />
+      </div>
+      <div>
+        <button
+          className="primary button block"
+          onClick={() =>
+            submitRating({
+              restaurant,
+              date,
+              food,
+              beverage,
+              service,
+              comfort,
+              vibe,
+            })
+          }
+        >
+          Submit Rating
+        </button>
       </div>
     </div>
   );
